@@ -149,7 +149,7 @@ void loop(){
      dataFile.println(consumo, 4);   
      dataFile.close();
 
-###TESTE DE VALORS###
+###TESTE DE VALORES###
      Serial.print(now.day(),DEC);
      Serial.print('/');
      Serial.print(now.month(),DEC);
@@ -173,12 +173,12 @@ void loop(){
      Serial.println(tempo_final/1000);      
   }
   
-###BOTÃO PARA ACIONAMENTO DA LUZ DE FUNDO DO DISPLAY### 
- if((selectButton < 800) && (selectButton >= 600)){
-   digitalWrite(pinBackLight, HIGH);
-   TempoBackLight = millis(); 
- }
- if((millis() - TempoBackLight) >= 5){
-  digitalWrite(pinBackLight, LOW); 
- }
-}
+//###BOTÃO PARA ACIONAMENTO DA LUZ DE FUNDO DO DISPLAY### 
+// if((selectButton < 800) && (selectButton >= 600)){
+//   digitalWrite(pinBackLight, HIGH);
+//   TempoBackLight = millis(); 
+// }
+// if((millis() - TempoBackLight) >= 5){
+//  digitalWrite(pinBackLight, LOW); 
+// }
+//}
